@@ -4,11 +4,10 @@ var cors = require('cors')
 var logger = require('morgan')
 var mongoose = require('mongoose')
 var routes = require('./src/routes')
-const axios = require('axios')
 
 var corsOptions = { // CORS 옵션
-  origin: '*', // 주소 변경 
-  credentials: true // 인증
+  origin: '*', 
+  credentials: true // 
 }
 
 // const CONNECT_URL = 'mongodb://localhost:27017/syleemomo'
@@ -28,11 +27,6 @@ app.use("/api", routes) // api 라우팅
 
 app.get('/hello', (req, res) => { // URL 응답 테스트
     res.send('hello world !')
-})
-
-app.get('/fetch', async (req, res) => {
-    const response = await axios.get('https://jsonplaceholder.typicode.com/todos')
-    res.send(response.data)
 })
 
 app.get('/error', (req, res) => {
