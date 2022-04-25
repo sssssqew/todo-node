@@ -7,7 +7,7 @@ var routes = require('./src/routes')
 const axios = require('axios')
 
 var corsOptions = { // CORS 옵션
-  origin: '*', 
+  origin: '*', // 주소 변경 
   credentials: true // 
 }
 
