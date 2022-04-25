@@ -4,7 +4,7 @@ var cors = require('cors')
 var logger = require('morgan')
 var mongoose = require('mongoose')
 var routes = require('./src/routes')
-const { default: axios } = require('axios')
+var axios = require('axios')
 
 var corsOptions = { // CORS 옵션
   origin: '*', 
@@ -12,7 +12,7 @@ var corsOptions = { // CORS 옵션
 }
 
 // const CONNECT_URL = 'mongodb://localhost:27017/syleemomo'
-const CONNECT_URL = 'mongodb+srv://sunrise:rkrrlska@cluster0.dqptx.mongodb.net/sunrise?retryWrites=true&w=majority'
+const CONNECT_URL = "mongodb+srv://sunrise:rkrrlska@cluster0.drwkh.mongodb.net/sunrise?retryWrites=true&w=majority";
 
 mongoose.connect(CONNECT_URL, { // Mongo DB 서버 연결
     useNewUrlParser: true,
