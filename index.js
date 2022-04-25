@@ -8,7 +8,7 @@ const axios = require('axios')
 
 var corsOptions = { // CORS 옵션
   origin: '*', // 주소 변경 
-  credentials: true // 
+  credentials: true // 인증
 }
 
 // const CONNECT_URL = 'mongodb://localhost:27017/syleemomo'
