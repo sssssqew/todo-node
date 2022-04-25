@@ -7,7 +7,7 @@ var routes = require('./src/routes')
 const axios = require('axios')
 
 var corsOptions = { // CORS 옵션
-  origin: 'http://localhost:3000', 
+  origin: '*', 
   credentials: true // 
 }
 
